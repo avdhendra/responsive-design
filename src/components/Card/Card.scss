@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    height: 554px;
+   border-radius: 25px;
+   border: 1px solid #93A2D361;
+   padding: 30px;
+   
+   button{
+    width: 130px;
+    height: 42px;
+    color: #424961;
+font-weight: 600;
+    border:1px solid  #424961;
+    background: transparent;
+border-radius: 20px;
+
+   }
+   &-title{
+    font-size: 21px;
+    font-weight: 700;
+color: #0E2368;
+
+   }
+   &-description{
+    color: #444957;
+    line-height: 27px;
+    font-size: 15px;
+    font-weight: 400;
+
+   }
+}
+
+@media screen and (max-width: 400px){
+    .card{
+         width: 271px;
+    height: 484px;
+    }
+}
