@@ -3,10 +3,10 @@ import "./LatestArticle.scss"
 import data from '../../utils/data'
 import Card from '../Card/Card'
 import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
-import { BsSlashLg } from "react-icons/bs";
+
 const LatestArticles = () => {
     const [currentCard, setCurrentCard] = useState(1);
-    const [CardPerPage, setCardPerPage] = useState(3);
+    const CardPerPage =3;
     const lastCardIndex = currentCard * CardPerPage
     const firstCardIndex = lastCardIndex - CardPerPage
     const currentCards = data.slice(firstCardIndex, lastCardIndex)
